@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>To-do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="sticky">
+        
+        <div class="title"><h2>To-do List</h2></div>
+
+        <div class="input-group">
+          <input type="text" placeholder="Write your task here" id="newTask" />
+ 
+          <button class="add" type="button" id="addTask">
+
+            <span aria-hidden="true" data-action="remove" data-id="">&plus;</span>
+
+          </button>
+        </div>
+        
+        <ul class="list-group" id="taskList"> 
+
+          </ul>
+       
+
+        <div class="sub-group">
+          <span>Total Tasks : 
+            <span id="taskCount">0</span> 
+          </span>
+
+          <a href="#" id="clearAllTask">Clear All</a>
+        </div>
+
+      </div>
+    
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
